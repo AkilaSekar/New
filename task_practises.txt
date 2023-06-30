@@ -7,7 +7,7 @@ todays task:
 
 ---------------------------------------------------------------------------------------------------
 ======>title caps<========
-
+====>method 1
 let arr=["akila","sekar","gift","sekar"];
 let temp=[];
 let value,temp1,value1;
@@ -19,6 +19,20 @@ for(let i=0;i<arr.length; i++){
     temp1=temp1.replace(value,value1);
     console.log(temp1);
 }
+=========>method 2
+let arr="akila sekar gift sekar";
+let temp=[];
+let value,temp1,value1,final=[];
+let arr1=arr.split(" ");
+for(let i=0;i<arr1.length; i++){
+    temp=arr1[i].split("");
+    value=temp[0];
+    value1=value.toUpperCase();
+    temp1=temp.join("");
+    temp1=temp1.replace(value,value1);
+    final.push(temp1);
+}
+console.log(final.join(" "));
 
 
 ---------------------------------------------------------------------------------------------------
