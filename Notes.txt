@@ -1,2 +1,66 @@
-Empty not
-second line
+
+-----------------------------------------------------------------------------------------------------------------------------
+<html>
+    <head>
+        <title>
+            Prime numbers in an array
+        </title>
+    </head>
+    <body>
+        <script>
+                var numbers = [2, 3, 4, 9, 10, 11, 12, 13, 14, 15];
+                var primes = [];
+
+                // prime numbers in an array using anonymous function
+                let anonFunction=function() {
+                    console.log("----------------------Anonymous Function-------------------");
+                    for (var i = 0; i < numbers.length; i++) {
+                        var number = numbers[i];
+                        var isPrime = true;
+
+                        for (var j = 2; j <= Math.sqrt(number); j++) {
+                        if (number % j === 0) {
+                            isPrime = false;
+                            break;
+                        }
+                        }
+
+                        if (isPrime && number > 1) {
+                        primes.push(number);
+                        }
+                    }
+
+                    console.log(primes) //primes;
+                    };
+                    anonFunction();
+                    primes=[];
+
+
+                    // prime numbers in an array using IIFE function
+                    (function() {
+                    console.log("----------------------IIFE Function-------------------");
+                    for (var i = 0; i < numbers.length; i++) {
+                        var number = numbers[i];
+                        var isPrime = true;
+
+                        for (var j = 2; j <= Math.sqrt(number); j++) {
+                        if (number % j === 0) {
+                            isPrime = false;
+                            break;
+                        }
+                        }
+
+                        if (isPrime && number > 1) {
+                        primes.push(number);
+                        }
+                    }
+                    console.log(primes) //primes;
+                    }
+                )();
+
+
+        </script>
+    </body>
+</html>
+
+-----------------------------------------------------------------------------------------------------------------------------
