@@ -58,13 +58,81 @@ for(let i=0; i<arr.length;i++){
 =>duplicates
 
 
+let arr=[1,1,1,2,2,2,3,3,3,4,4,4,4,5,5,5,5,5,0,0,0,-1,-1,-2,-2];
+for(let i=0; i<arr.length-1; i++){
+    for(let j=i+1; j<arr.length; j++){
+        if(arr[i]==arr[j]){
+            arr.splice(j,1);
+            j--;
+            
+        }
+    }
+}
+console.log(arr);
+
+
 ---------------------------------------------------------------------------------------------------
 =>rotation
+
+let arr=[1,2,3,4,5,6,7,8,9,10];
+let k=4;
+let temp=[];
+let newArray=[];
+if(k!=0){
+    k=k%arr.length;
+for(let i=0; i<k; i++){
+    newArray[0]=arr[arr.length-1];
+    for(let j=0; j<arr.length-1;j++){
+        newArray.push(arr[j]);
+    }
+    temp=newArray;
+    arr=temp;
+    newArray=[];
+}
+}
+else{
+    temp=arr;
+}
+console.log(temp);
 
 
 ---------------------------------------------------------------------------------------------------
 =>median
 
+
+let arr1=[52,41,37,99];
+let arr2=[812,73,12,10,66,19];
+let median;
+let n;
+let temp;
+for(let i=0; i<arr2.length; i++){
+    arr1.push(arr2[i]);
+}
+for(let i=0; i<arr1.length-1;i++){
+    for(let j=i+1; j<arr1.length; j++){
+        if(arr1[i]>arr1[j]){
+            temp=arr1[i];
+            arr1[i]=arr1[j];
+            arr1[j]=temp;
+        }
+    }
+}
+console.log(arr1);
+
+let l=arr1.length;
+
+if(l%2!==0)
+{
+    n=Math.floor(l/2);
+    median=arr1[n];
+    console.log(median);
+}
+else{
+    
+    n=(l/2);
+    median=parseFloat((arr1[n]+arr1[n-1])/2);
+    console.log(median);
+}
 
 ---------------------------------------------------------------------------------------------------
 
