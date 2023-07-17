@@ -1,64 +1,107 @@
-<html>
-    <head>
-        <title>
-            HTML practice session
-        </title>
-    </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akila Sekar's Bio Data</title>
     <style>
-        div{
-            color:blueviolet;
-        }
-        .school{
-            display:block;
-            color:crimson;
-            background-color:aqua;
-            padding:1;
-            border-width:5px;
-            border-color: blueviolet;
-        }
-        #college{
-            color:crimson;
-            background-color:greenyellow;
+        .container{
+            border:3px solid brown;
+            color: blue;
+            background-color: chartreuse;
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap:3px
 
         }
-        #techinstitute{
-            color:black;
-            background-color:blue
+        .item{
+            border: 2px solid green;
+            border-color: cyan;
+            background-color: red;
+            padding:5px;
+            margin:5px
+        }
+        .flex-container{
+            border:3px solid brown;
+            color: blue;
+            background-color: chartreuse;
+            display:flex;
+            /* next two line one combo */
+            /* flex-flow:column wrap ; */
+            /* align-content:center; */
+           
+            /* next two line one combo */
+            flex-direction: row-reverse;
+            justify-content:space-around;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap:3px
 
         }
-        span{
-            display:block;
-            color:hotpink;
-            background-color:rgb(15, 13, 6);
-            border: 1px solid black;
-            border-color: blueviolet;
-            border-width: 12;
-        }
-        .inline-block {
-            display:inline-block;
-            border-width:thin;
-            color:mediumspringgreen;
-            background-color: crimson;
-            padding: 35;
-            border:10px solid greenyellow;
-            margin: px;
-
+        .f-item{
+            flex: 0 0 auto;
+            border: 2px solid green;
+            background-color: red;
+            padding:5px;
+            margin:5px
         }
     </style>
-    <body>
-        <div >Educational Details<br>
-            <div class="school">Jay</div>
-            <div class="school">St.Joseph's</div>
-            <div class="school">Cluny</div>
-            <div class="school">Green Park</div>
-            <div id="college">PSG</div>
-            <div id="techinstitute">Guvi</div>  
-        </div>
-        <span>Zen class</span>
-        <span>Mern Stack Course</span>
-        <span>Full Stack Developer</span>
-        <span class="inline-block">HTML</span>
-        <span class="inline-block">CSS</span>
-        <span class="inline-block">JS</span>
-    </body>
+</head>
+<body style="color:red; background-color:pink;">
+    Fill the below form to Akila's Data
+    <br>
+    <label for="name">Name:</label>
+    <input id="name" type="text">
+    <br>
+    <br>
+    <label for="email">Email:</label>
+    <input id="email" type="email">
+    <label for="password">Password:</label>
+    <input id="password" type="password">
+    <br>
+    <br>
+    <label for="dob">DOB:</label>
+    <input id="dob" type="date">
+    <br>
+    <br>
+    <label>Languages Known:</label>
+   <select>
+    <option>Tamil</option>
+    <option>English</option>
+    <option>Hindi</option>
+   </select>
+   <br>
+   <br>
+   <label>City:</label>
+   <select>
+    <option>Salem</option>
+    <option>Chennai</option>
+    <option>Coimbatore</option>
+    <option>Trichy</option>
+    <option>Madurai</option>
+   </select>
+   <br><br>
+   <label for="upload">Upload Document:</label>
+   <input id ="upload" type="file">
+   <br><br>
+   <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+
+   </div>
+
+   <br><br>
+   <div class="flex-container">
+    <div class="f-item">Item 1</div>
+    <div class="f-item">Item 2</div>
+    <div class="f-item">Item 3</div>
+
+   </div>
+   <br><br>
+   <input type="button" value="Save">
+   <input type="reset" value="Cancel">
+</body>
 </html>

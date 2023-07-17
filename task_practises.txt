@@ -135,5 +135,70 @@ else{
 }
 
 ---------------------------------------------------------------------------------------------------
+html practise :dummy only
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        div{
+            color:black ;
+        }
+        .school{
+            display:block;
+            color:crimson;
+            background-color:aqua;
+            padding:1;
+            border-width:5px;
+            border-color: blueviolet;
+        }
+        #college{
+            color:crimson;
+            background-color:greenyellow;
 
+        }
+        #techinstitute{
+            color:black;
+            background-color:blue
+
+        }
+        span{
+            display:block;
+            color:hotpink;
+            background-color:rgb(15, 13, 6);
+            border: 1px solid black;
+            border-color: blueviolet;
+            border-width: 12;
+        }
+        .inline-block {
+            display:inline-block;
+            border-width:thin;
+            color:mediumspringgreen;
+            background-color: crimson;
+            padding: 35;
+            border:10px solid greenyellow;
+            margin: px;
+
+        }
+    </style>
+    <body>
+        <div style="color:red;background-color:blueviolet" >Educational Details<br>
+            <div class="school">Jay</div>
+            <div class="school">St.Joseph's</div>
+            <div class="school">Cluny</div>
+            <div class="school">Green Park</div>
+            <div id="college">PSG</div>
+            <div id="techinstitute">Guvi</div>  
+        </div>
+        <div>Zen class</div>
+        <span>Mern Stack Course</span>
+        <span>Full Stack Developer</span>
+        <span class="inline-block">HTML</span>
+        <span class="inline-block">CSS</span>
+        <span class="inline-block">JS</span>
+    </body>
+</html>
