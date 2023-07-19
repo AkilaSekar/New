@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 3px solid greenyellow;
+            color:deeppink;
+            padding:8px;
+            margin: 5px;
+            background-color: burlywood;
+        }
+        .c-elementclass{
+            color:black;
+        }
+        #c-element{
+            background-color:pink;
+        }
+        #c-element1{
+            background-color:aquamarine;
+        }
+        
+        #c-element2{
+            background-color:aqua;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent" class="parentclass">Hello World!! I am the parent Div here!!</div>
+    
+    <script>
+        const childElement=document.createElement("div");
+        childElement.setAttribute("id","c-element");
+        childElement.setAttribute("class","c-elementclass");        
+        childElement.innerText="Helo, I am the Child here!!";
+        const parentElement=document.getElementById("parent");
+        parentElement.appendChild(childElement);
+
+        const childElement1=document.createElement("div");
+        childElement1.setAttribute("id","c-element1");
+        childElement1.setAttribute("class","c-elementclass");  
+        childElement1.innerText="Helo, I am the second Child here!!";
+        
+
+        const childElement2=document.createElement("a");
+        childElement2.setAttribute("id","c-element2");
+        childElement2.setAttribute("href","https://www.guvi.in/");
+        childElement2.setAttribute("target","_blank");  
+        childElement2.innerText="Click here to reach guvi!!";
+        childElement2.setAttribute("image","guvi.jpg");  
+        
+
+
+        const childElement3=document.createElement("img");
+        childElement3.setAttribute("src","guvi.jpg");  
+        
+
+        
+        const para=document.createElement("p");
+        para.innerHTML="Name: Akila Sekar <br> Age:25 <br> Place:Salem";  
+        // para.innerHTML=`<span style="color: darkslateblue">Akila Sekar</span>`
+        childElement.append(childElement1,childElement2,childElement3,para,"Bye!");
+
+
+    </script>
+</body>
+</html>
