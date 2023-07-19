@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para1c{
+            border:1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="para1" class="para1c">para 1</p>
+    <p id="para2" class="para1c">para 2</p>
+    <p id="para3" class="para1c">para 3</p>
+    <p id="para4" class="para1c">para 4</p>
+    <p id="para5" class="para1c">para 5</p>
+    <p id="para6" class="para1c">para 6</p>
+
+    <script>
+        const aki=document.querySelectorAll(".para1c");
+        aki.forEach((element)=>{
+                element.style.color="green";
+        });
+
+    </script>
+</body>
+</html>
