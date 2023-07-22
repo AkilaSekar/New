@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Events Practice!!!</h1>
+    <div id="div">
+        <p id="para1">Helo World, click here to see the changes 1</p>
+        <p id="para2">Helo World, click here to see the changes 2</p>
+    </div>
+    <script>
+        const targetDiv=document.getElementById("div");
+        const targetPara1=document.getElementById("para1");
+        const targetPara2=document.getElementById("para2");
+        targetDiv.addEventListener("click",function(){
+            targetDiv.style.backgroundColor="aqua";
+
+        });
+        targetPara1.addEventListener("click",function(){
+            targetPara1.style.backgroundColor="green";
+
+        });
+        targetPara2.addEventListener("click",function(){
+            targetPara2.style.backgroundColor="yellow";
+
+        });
+        targetDiv.addEventListener("mouseover",function(){
+            // targetDiv.style.backgroundColor="pink";
+            targetPara1.innerText="1 is Hovered";
+            targetPara2.innerText="2 is Hovered";
+
+        });
+        targetPara1.addEventListener("mouseout",function(){
+            // targetPara1.style.backgroundColor="green";
+            targetPara1.innerText="1 is hovered and taken back";
+            targetPara2.innerText="2 is Hovered and taken back";
+
+        });
+        document.addEventListener("keydown",function(){
+            console.log(event.key);
+        });
+
+    </script>
+</body>
+</html>
