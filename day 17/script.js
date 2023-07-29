@@ -9,6 +9,7 @@ promiseObj
 .then(
 (val)=>{
 console.log("the value is",val);
+console.log("the value is",val);
 
 })
 .catch(
