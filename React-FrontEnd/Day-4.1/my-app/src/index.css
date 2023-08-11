@@ -73,9 +73,12 @@ button:focus-visible {
   justify-content: space-between;
 }
 .product{
+  color: white;
   width:180px;
   height: 300px;
   flex-direction: column;
-  background-color:greenyellow;
+  background-color:grey;
   justify-content: space-between;
+  border:2px solid black;
+  border-radius: 20px;
 }
