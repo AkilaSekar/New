@@ -5,13 +5,21 @@ This project is a simple shopping cart page implemented using React. It allows u
 # Steps to Execite the code:
 
 1)Installations required: node js
+
 2)Get into the location of the directory
+
 3)All the components are found under "Src" folder
+
 4)Under src- there are various components used to do the provided task
+
 5)The parent component "Cart" is imported into the main jsx file.
+
 6)This parent component contains the actually functions and code needed to add and remove items to and from the cart.
+
 7)It has few child components imported into it.
+
 8)Each product is created as an individual component and exported to the parent component
+
 9)The child Product component contains the basic details of every product such as image, price and description details
 
 
