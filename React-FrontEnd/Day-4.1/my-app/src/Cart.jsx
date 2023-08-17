@@ -11,7 +11,6 @@ import Product8 from './Product8.jsx'
 import head from './head.jpg'
 import cart from './cart.jpg'
 
-
 function Cart() {
   // Declaration of initail flag values and cart count for every product using hooks
     const [flag6, setFlag6] = useState(true);
@@ -73,7 +72,6 @@ function Cart() {
         setCounter(counter - 1);
       }
 
-    
     // Handling functions for product 4 when added and remoed from cart
     const handleClickAdd4 = () => {
         setFlag4(false);
@@ -91,7 +89,6 @@ function Cart() {
       }
 
     // Handling functions for product 5 when added and remoed from cart
-
       const handleClickAdd5 = () => {
         setFlag5(false);
         handleIncrement5();
@@ -106,7 +103,6 @@ function Cart() {
     function handleDecrement5(){        
         setCounter(counter - 1);
       }
-
     
     // Handling functions for product 6 when added and remoed from cart
     const handleClickAdd6 = () => {
@@ -124,7 +120,6 @@ function Cart() {
         setCounter(counter - 1);
       }
 
-    
   // Handling functions for product 7 when added and remoed from cart
     const handleClickAdd7 = () => {
       setFlag7(false);
@@ -140,8 +135,6 @@ function Cart() {
     function handleDecrement7(){        
         setCounter(counter - 1);
       }
-
-
     
     // Handling functions for product 8 when added and remoed from cart
     const handleClickAdd8 = () => {
@@ -177,9 +170,7 @@ function Cart() {
           <div className="product card"><Product8/>{flag8? <button onClick={handleClickAdd8}>Add to Cart</button> : <button onClick={handleClickRemove8}>Remove from Cart</button>}</div>
         </div>
     </div>
-   
     </>
   )
 }
-
 export default Cart
