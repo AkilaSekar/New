@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import CardList from './CardList';
-import AddCardForm from './AddCardForm';
-import './App.css';
+// import CardList from './CardList';
+// import AddCardForm from './AddCardForm';
+// import './App.css';
+import TicTacToe from './TicTacToe'
 
 function App() {
   const [cards, setCards] = useState([]);
@@ -31,12 +32,13 @@ function App() {
   return (
     <div className="app">
       <h1>Card CRUD App</h1>
-      <AddCardForm onAdd={addCard} />
+      {/* <AddCardForm onAdd={addCard} />
       <CardList
         cards={cards}
         onDelete={deleteCard}
-        onEdit={editCard}
-      />
+        onEdit={editCard} */}
+      {/* /> */}
+      <TicTacToe/>
     </div>
   );
 }
