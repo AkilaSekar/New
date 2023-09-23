@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Parent from './Parent.jsx'
+import TodoApp from './TodoApp'
 import ParentComponent from './ParentComponent.jsx'
 
 
@@ -11,9 +11,8 @@ function App() {
 
   return (
     <>
-     <h1>Day 25- Additional</h1>
-    <Parent/>
-    <ParentComponent/>
+     
+     <TodoApp/>
     </>
   )
 }
